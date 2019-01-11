@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="IconAcademe" parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="mac"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserVersion" value="61.0"/>
+    <parameter name="url" value="https://www.iconacademe.com/"/>
+    <parameter name="userID" value="test"/>
+
+    <test name = "Icon Academe Login and Logout">
+        <classes>
+            <!--<class name="CoursesModule"/>-->
+            <!--<class name="InvalidLogin"/>-->
+            <!--<class name="LoginAndLogout"/>-->
+            <!--<class name="Mousehover"/>-->
+            <!--<class name="LoginAndLogout"/>-->
+            <!--<class name="Purchase"/>-->
+            <!--<class name="ReadfromExcel"/>-->
+            <class name="HomePage"/>
+        </classes>
+    </test>
+
+</suite>
+
